@@ -1,13 +1,19 @@
 language: cpp
 
 compiler:
-	- gcc
+    - gcc
 
 before_script:
-	- mkdir build
-	- cd build
-	- cmake ../
+    - mkdir build
+    - cd build
+    - cmake ../
 
+<<<<<<< HEAD
 script:
     - make
 	- ctest
+=======
+after_script:
+    - make
+    - ctest
+>>>>>>> 53c12116d2eca43111a9f99daf4346db7a7b526f
