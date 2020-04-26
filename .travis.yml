@@ -8,6 +8,6 @@ before_script:
 	- cd build
 	- cmake ../
 
-after_script:
-	- make
+script:
+    - make
 	- ctest
