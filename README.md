@@ -36,3 +36,14 @@ src/ExampleProject_run
 ```
 tests/ExampleProject_tst
 ```
+
+## Build with Docker
+#### Build
+```
+docker build . -t example-project:1.0.0
+```
+
+#### Run
+```
+docker run --rm example-project:1.0.0
+```
