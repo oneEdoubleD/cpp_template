@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(src)
 
 add_subdirectory(src)
-add_subdirectory(tests)
 
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
@@ -32,3 +31,6 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
                  ${CMAKE_CURRENT_BINARY_DIR}/googletest-build
                  EXCLUDE_FROM_ALL)
+
+enable_testing()
+add_subdirectory(tests)
