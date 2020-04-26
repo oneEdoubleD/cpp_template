@@ -1,4 +1,5 @@
 # C++ Template Project
+[![Build Status](https://travis-ci.org/oneEdoubleD/cpp_template.svg?branch=master)](https://travis-ci.org/oneEdoubleD/cpp_template)
 A template C++ project with Google Test and CMake. 
 
 ## How to use
